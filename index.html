@@ -32,16 +32,14 @@
     <style>
         body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f0f8ff; color: #333; line-height: 1.6; }
         .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { position: sticky; top: 0; z-index: 10; background: linear-gradient(to right, #007bff, #00bfff); color: white; padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+        header { position: sticky; top: 0; z-index: 10; background: linear-gradient(to right, #007bff, #00bfff); color: white; padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
         .brand { display: flex; align-items: center; gap: 10px; }
         .logo { width: 48px; height: 48px; background: linear-gradient(135deg, #007bff, #00bfff); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; }
-        .site-title { margin: 0; font-size: 1.2em; }
-        nav { display: flex; gap: 20px; }
-        nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s; }
-        nav a:hover { color: #ffcc00; }
-        .hdr-contacts { display: flex; gap: 10px; }
-        .btn-phone, .btn-wa, .btn-tg { color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; display: flex; align-items: center; gap: 8px; }
+        .site-title { margin: 0; font-size: 1em; }
+        nav { display: none; }
+        .hdr-contacts { display: flex; gap: 8px; }
+        .btn-phone, .btn-wa, .btn-tg { color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; display: flex; align-items: center; gap: 8px; }
         .btn-phone { background: #28a745; }
         .btn-phone:hover { background: #218838; }
         .btn-wa { background: #25D366; }
@@ -97,17 +95,19 @@
         .scheme li::before { content: counter(scheme-counter); position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background: #007bff; color: white; width: 25px; height: 25px; border-radius: 50%; text-align: center; line-height: 25px; font-weight: bold; }
         .scheme li:hover { transform: translateX(5px); }
         @media (max-width: 768px) {
-            .header-inner { flex-direction: column; gap: 10px; }
+            .header-inner { flex-direction: column; gap: 8px; }
             .site-title { font-size: 1em; }
-            nav { flex-direction: column; gap: 10px; }
-            .hero { padding: 20px; }
-            .cta, .cta-secondary { padding: 10px 20px; font-size: 0.9em; }
+            .hero { padding: 15px; }
+            .cta, .cta-secondary { padding: 8px 16px; font-size: 0.85em; }
             .contacts { flex-direction: column; }
+            .contact-btn { padding: 8px 16px; font-size: 0.85em; width: 100%; }
             .info-slogan { font-size: 1em; padding: 8px; }
             .prices-flex { flex-direction: column; }
             .slides { gap: 10px; }
             .slide { min-width: 100%; }
             .hdr-contacts { flex-direction: column; }
+            .hdr-contacts a { width: 100%; font-size: 0.9em; }
+            .hdr-contacts i { font-size: 0.9em; }
         }
     </style>
 </head>
@@ -120,13 +120,6 @@
                     <h1 class="site-title">Мастер по ремонту холодильников в Сургуте</h1>
                 </div>
             </div>
-            <nav>
-                <a href="#services">Услуги</a>
-                <a href="#prices">Цены</a>
-                <a href="#advantages">Преимущества</a>
-                <a href="#reviews">Отзывы</a>
-                <a href="#faq">FAQ</a>
-            </nav>
             <div class="hdr-contacts">
                 <a href="tel:+73462123456" class="btn-phone"><i class="fa fa-phone"></i> Позвонить: +7 (3462) 12-34-56</a>
                 <a href="https://wa.me/73462123456" class="btn-wa"><i class="fa fa-whatsapp"></i> Написать в WhatsApp</a>
@@ -342,4 +335,4 @@
         sections.forEach(section => observer.observe(section));
     </script>
 </body>
-</html>
+</html> 
