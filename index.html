@@ -39,22 +39,17 @@
         .site-title { margin: 0; font-size: 1em; }
         nav { display: none; }
         .hdr-contacts { display: flex; gap: 8px; }
-        .btn-phone, .btn-wa, .btn-tg { color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; display: flex; align-items: center; gap: 8px; }
-        .btn-phone { background: #28a745; }
+        .btn-phone { color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; display: flex; align-items: center; gap: 8px; background: #28a745; }
         .btn-phone:hover { background: #218838; }
-        .btn-wa { background: #25D366; }
-        .btn-wa:hover { background: #1EBE57; }
-        .btn-tg { background: #0088cc; }
-        .btn-tg:hover { background: #0077aa; }
-        .hero { position: relative; padding: 60px 20px; text-align: center; color: white; background: url('https://images.unsplash.com/photo-1605902711622-cfb43c44367e?q=80&w=1600&auto=format&fit=crop') no-repeat center/cover; }
-        .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)); }
+        .hero { padding: 60px 20px; text-align: center; background: #f0f8ff; }
         .hero-content { position: relative; z-index: 1; }
+        .hero h2 { color: #fff; background: #007bff; padding: 10px; border-radius: 8px; display: inline-block; }
         .ctas { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
         .cta { background: #ff4500; color: white; padding: 18px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: transform 0.3s, box-shadow 0.3s; font-size: 1.1em; }
         .cta:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(255,69,0,0.5); }
-        .cta-secondary { background: transparent; border: 2px solid white; color: white; padding: 16px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: transform 0.3s, background 0.3s; }
-        .cta-secondary.wa:hover { background: #25D366; }
-        .cta-secondary.tg:hover { background: #0088cc; }
+        .cta-secondary { background: transparent; border: 2px solid #007bff; color: #007bff; padding: 16px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: transform 0.3s, background 0.3s; }
+        .cta-secondary.wa:hover { background: #25D366; color: white; }
+        .cta-secondary.tg:hover { background: #0088cc; color: white; }
         section { padding: 40px 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s; }
         section.visible { opacity: 1; transform: translateY(0); }
         h2 { color: #007bff; text-align: center; margin-bottom: 30px; }
@@ -87,7 +82,7 @@
         .contact-btn.wa:hover { background: #1EBE57; }
         .contact-btn.tg { background: #0088cc; color: white; border: none; }
         .contact-btn.tg:hover { background: #0077aa; }
-        .info-slogan { margin: 15px 0; padding: 10px; background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.4)); border-radius: 8px; font-size: 1.2em; font-weight: bold; color: #ffcc00; text-align: center; transition: transform 0.3s; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .info-slogan { margin: 15px 0; padding: 10px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)); border-radius: 8px; font-size: 1.2em; font-weight: bold; color: #ffcc00; text-align: center; transition: transform 0.3s; max-width: 800px; margin-left: auto; margin-right: auto; }
         .info-slogan:hover { transform: scale(1.02); }
         .info-slogan span { display: block; margin: 5px 0; }
         .scheme { list-style: none; counter-reset: scheme-counter; padding: 0; }
@@ -117,13 +112,11 @@
             <div class="brand">
                 <div class="logo">RH</div>
                 <div>
-                    <h1 class="site-title">Мастер по ремонту холодильников в Сургуте</h1>
+                    <h1 class="site-title">Ремонт холодильников в Сургуте</h1>
                 </div>
             </div>
             <div class="hdr-contacts">
                 <a href="tel:+73462123456" class="btn-phone"><i class="fa fa-phone"></i> Позвонить: +7 (3462) 12-34-56</a>
-                <a href="https://wa.me/73462123456" class="btn-wa"><i class="fa fa-whatsapp"></i> Написать в WhatsApp</a>
-                <a href="https://t.me/+73462123456" class="btn-tg"><i class="fa fa-telegram"></i> Написать в Telegram</a>
             </div>
         </div>
     </header>
@@ -232,7 +225,8 @@
                 <p>Объясняю, что сломалось и как избежать поломок в будущем.</p>
             </div>
         </div>
-        <h3>Схема работы: просто и прозрачно. Выберите удобный метод связи!</h3>
+        <h3>Схема работы: просто и прозра
+
         <ol class="scheme">
             <li>Звоните или пишите в мессенджерах — отвечу за 5 мин.</li>
             <li>Опишите проблему — скажу примерную цену.</li>
@@ -335,4 +329,4 @@
         sections.forEach(section => observer.observe(section));
     </script>
 </body>
-</html> 
+</html>
