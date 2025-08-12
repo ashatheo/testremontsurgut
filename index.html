@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт холодильников в Сургуте на дому | Мастер с выездом</title>
+    <meta name="description" content="Срочный ремонт холодильников в Сургуте. Выезд мастера на дом, гарантия, низкие цены. Звоните!">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Schema.org Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Ремонт холодильников Сургут",
+      "image": "https://via.placeholder.com/1200x400?text=Ремонт+Холодильников+Сургут",
+      "telephone": "+7 (3462) 12-34-56",
+      "email": "master@remholod-surgut.ru",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Ленина, 10",
+        "addressLocality": "Сургут",
+        "addressRegion": "ХМАО",
+        "postalCode": "628400",
+        "addressCountry": "RU"
+      },
+      "openingHours": "Mo-Su 00:00-23:59",
+      "priceRange": "₽₋₋",
+      "url": "https://remholod-surgut.ru"
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f0f8ff; color: #333; line-height: 1.6; }
+        .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { position: sticky; top: 0; z-index: 10; background: linear-gradient(to right, #007bff, #00bfff); color: white; padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+        .brand { display: flex; align-items: center; gap: 10px; }
+        .logo { width: 48px; height: 48px; background: linear-gradient(135deg, #007bff, #00bfff); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; }
+        .site-title { margin: 0; font-size: 1.2em; }
+        nav { display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #ffcc00; }
+        .hdr-contacts { display: flex; gap: 10px; }
+        .btn-phone, .btn-wa, .btn-tg { color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; display: flex; align-items: center; gap: 8px; }
+        .btn-phone { background: #28a745; }
+        .btn-phone:hover { background: #218838; }
+        .btn-wa { background: #25D366; }
+        .btn-wa:hover { background: #1EBE57; }
+        .btn-tg { background: #0088cc; }
+        .btn-tg:hover { background: #0077aa; }
+        .hero { position: relative; padding: 60px 20px; text-align: center; color: white; background: url('https://images.unsplash.com/photo-1605902711622-cfb43c44367e?q=80&w=1600&auto=format&fit=crop') no-repeat center/cover; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)); }
+        .hero-content { position: relative; z-index: 1; }
+        .ctas { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+        .cta { background: #ff4500; color: white; padding: 18px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: transform 0.3s, box-shadow 0.3s; font-size: 1.1em; }
+        .cta:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(255,69,0,0.5); }
+        .cta-secondary { background: transparent; border: 2px solid white; color: white; padding: 16px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: transform 0.3s, background 0.3s; }
+        .cta-secondary.wa:hover { background: #25D366; }
+        .cta-secondary.tg:hover { background: #0088cc; }
+        section { padding: 40px 0; opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s; }
+        section.visible { opacity: 1; transform: translateY(0); }
+        h2 { color: #007bff; text-align: center; margin-bottom: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-6px); }
+        .card i { font-size: 40px; color: #007bff; margin-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+        th { background: #007bff; color: white; }
+        .prices-flex { display: flex; gap: 20px; flex-wrap: wrap; }
+        .prices-flex > div { flex: 1; min-width: 300px; }
+        .muted { color: #5a6b77; }
+        .slider { position: relative; overflow: hidden; }
+        .slides { display: flex; gap: 20px; transition: transform 0.45s ease; }
+        .slide { min-width: 250px; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .slide strong { font-weight: bold; display: block; margin-bottom: 8px; }
+        .slider-controls { display: flex; gap: 10px; justify-content: center; margin-top: 20px; }
+        .slider-controls button { background: #007bff; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
+        .slider-controls button:hover { background: #0056b3; }
+        footer { background: linear-gradient(to right, #007bff, #00bfff); color: white; text-align: center; padding: 20px; }
+        .faq { margin-bottom: 20px; }
+        .faq summary { cursor: pointer; font-weight: bold; }
+        .contacts { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .contact-btn { background: #ffffff; color: #007bff; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; border: 1px solid #007bff; transition: background 0.3s, color 0.3s; display: flex; align-items: center; gap: 8px; }
+        .contact-btn:hover { background: #007bff; color: white; }
+        .contact-btn.phone { background: #28a745; color: white; border: none; }
+        .contact-btn.phone:hover { background: #218838; }
+        .contact-btn.wa { background: #25D366; color: white; border: none; }
+        .contact-btn.wa:hover { background: #1EBE57; }
+        .contact-btn.tg { background: #0088cc; color: white; border: none; }
+        .contact-btn.tg:hover { background: #0077aa; }
+        .info-slogan { margin: 15px 0; padding: 10px; background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.4)); border-radius: 8px; font-size: 1.2em; font-weight: bold; color: #ffcc00; text-align: center; transition: transform 0.3s; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .info-slogan:hover { transform: scale(1.02); }
+        .info-slogan span { display: block; margin: 5px 0; }
+        .scheme { list-style: none; counter-reset: scheme-counter; padding: 0; }
+        .scheme li { counter-increment: scheme-counter; position: relative; padding: 15px 15px 15px 50px; margin-bottom: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .scheme li::before { content: counter(scheme-counter); position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background: #007bff; color: white; width: 25px; height: 25px; border-radius: 50%; text-align: center; line-height: 25px; font-weight: bold; }
+        .scheme li:hover { transform: translateX(5px); }
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; gap: 10px; }
+            .site-title { font-size: 1em; }
+            nav { flex-direction: column; gap: 10px; }
+            .hero { padding: 20px; }
+            .cta, .cta-secondary { padding: 10px 20px; font-size: 0.9em; }
+            .contacts { flex-direction: column; }
+            .info-slogan { font-size: 1em; padding: 8px; }
+            .prices-flex { flex-direction: column; }
+            .slides { gap: 10px; }
+            .slide { min-width: 100%; }
+            .hdr-contacts { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrap header-inner">
+            <div class="brand">
+                <div class="logo">RH</div>
+                <div>
+                    <h1 class="site-title">Мастер по ремонту холодильников в Сургуте</h1>
+                </div>
+            </div>
+            <nav>
+                <a href="#services">Услуги</a>
+                <a href="#prices">Цены</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <div class="hdr-contacts">
+                <a href="tel:+73462123456" class="btn-phone"><i class="fa fa-phone"></i> Позвонить: +7 (3462) 12-34-56</a>
+                <a href="https://wa.me/73462123456" class="btn-wa"><i class="fa fa-whatsapp"></i> Написать в WhatsApp</a>
+                <a href="https://t.me/+73462123456" class="btn-tg"><i class="fa fa-telegram"></i> Написать в Telegram</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="wrap hero-content">
+            <h2>Срочный ремонт холодильников в Сургуте на дому</h2>
+            <div class="info-slogan">
+                <span>Приедем быстро, выявим и устраним неисправность!</span>
+                <span>❄️ Спасём ваши продукты: предоставим временное хранение для скоропортящихся продуктов на время ремонта.</span>
+            </div>
+            <div class="ctas">
+                <a href="tel:+73462123456" class="cta">Вызвать мастера по телефону</a>
+                <a href="https://wa.me/73462123456" class="cta-secondary wa">Написать в WhatsApp</a>
+                <a href="https://t.me/+73462123456" class="cta-secondary tg">Написать в Telegram</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="wrap">
+        <h2>Услуги по ремонту: от простых поломок до сложных</h2>
+        <p class="muted">Я специализируюсь на ремонте холодильников на дому. Не нужно везти технику — всё делаю у вас. Вот типичные проблемы, которые решаю ежедневно:</p>
+        <div class="grid">
+            <div class="card">
+                <i class="fa fa-wrench"></i>
+                <h3>Замена компрессора</h3>
+                <p>Если холодильник не холодит или гудит — заменю мотор быстро, с оригинальными запчастями.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-snowflake-o"></i>
+                <h3>Заправка фреона</h3>
+                <p>Утечка хладагента? Заправлю и устраню причину, чтобы проблема не вернулась.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-plug"></i>
+                <h3>Ремонт электроники</h3>
+                <p>Плата вышла из строя? Восстановлю или заменю, включая No Frost системы.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-search"></i>
+                <h3>Диагностика и устранение утечек</h3>
+                <p>Бесплатно при ремонте. Найду скрытые проблемы за 15-20 мин.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-thermometer-empty"></i>
+                <h3>Замена термостата или датчиков</h3>
+                <p>Холодильник морозит слишком сильно или слабо? Настрою температуру идеально.</p>
+            </div>
+        </div>
+        <p class="muted">Работаю с бытовыми и коммерческими моделями. Если поломка редкая — звоните, проконсультирую бесплатно!</p>
+    </section>
+    
+    <section id="prices" class="wrap">
+        <h2>Цены на ремонт: прозрачно и доступно</h2>
+        <div class="prices-flex">
+            <div>
+                <table>
+                    <tr><th>Услуга</th><th>Цена, руб.</th></tr>
+                    <tr><td>Диагностика (при ремонте)</td><td>Бесплатно</td></tr>
+                    <tr><td>Замена компрессора</td><td>от 2000</td></tr>
+                    <tr><td>Заправка фреона</td><td>от 1500</td></tr>
+                    <tr><td>Ремонт No Frost</td><td>от 1000</td></tr>
+                    <tr><td>Замена термостата</td><td>от 800</td></tr>
+                    <tr><td>Устранение утечек</td><td>от 1200</td></tr>
+                </table>
+            </div>
+            <div class="card">
+                <h3>Почему выгоднее ремонт?</h3>
+                <p class="muted">Сэкономьте на покупке новой техники — замена ключевых узлов часто дешевле. При ремонте — гарантия 1 год, качественные запчасти и консультация по уходу.</p>
+                <ul style="margin: 10px 0 0; padding-left: 20px; color: #5a6b77;">
+                    <li>Скидка 10% пенсионерам и многодетным</li>
+                    <li>Выезд бесплатно по Сургуту при ремонте</li>
+                    <li>Оплата наличными или картой на месте</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="advantages" class="wrap">
+        <h2>Почему выбрать меня как мастера?</h2>
+        <p class="muted">Я не компания — я индивидуальный мастер с личным подходом. Вот что отличает мою работу:</p>
+        <div class="grid">
+            <div class="card">
+                <i class="fa fa-clock-o"></i>
+                <h3>Опыт</h3>
+                <p>Отремонтировал более 300 холодильной техники.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-shield"></i>
+                <h3>Гарантия 1 год</h3>
+                <p>На работы и запчасти. Если проблема вернется — приеду бесплатно.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-search"></i>
+                <h3>Диагностика неисправности</h3>
+                <p>Бесплатно при ремонте.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-star"></i>
+                <h3>Оригинальные запчасти</h3>
+                <p>Всегда в наличии, чтобы ремонт был надежным.</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-handshake-o"></i>
+                <h3>Личный подход</h3>
+                <p>Объясняю, что сломалось и как избежать поломок в будущем.</p>
+            </div>
+        </div>
+        <h3>Схема работы: просто и прозрачно. Выберите удобный метод связи!</h3>
+        <ol class="scheme">
+            <li>Звоните или пишите в мессенджерах — отвечу за 5 мин.</li>
+            <li>Опишите проблему — скажу примерную цену.</li>
+            <li>Приеду, диагностирую (бесплатно при ремонте).</li>
+            <li>Ремонтирую на месте (1-2 часа).</li>
+            <li>Даю гарантию и советы по уходу.</li>
+        </ol>
+    </section>
+    
+    <section id="reviews" class="wrap">
+        <h2>Отзывы клиентов: реальные истории</h2>
+        <p class="muted">Мои клиенты — жители Сургута, которые доверили мне свою технику. Вот что они говорят:</p>
+        <div class="slider">
+            <div class="slides" id="slides">
+                <div class="slide"><strong>Анна, Сургут, ул. Ленина</strong> "Мой старый Indesit перестал морозить перед праздниками. Мастер приехал вечером, заправил фреон за час. Теперь работает как новый! Спасибо за оперативность."</div>
+                <div class="slide"><strong>Иван, Сургут, район Восточный</strong> "Компрессор сгорел в жару. Думал купить новый холодильник, но мастер починил на дому недорого. Сэкономил кучу денег и нервов. Рекомендую!"</div>
+                <div class="slide"><strong>Мария, Сургут, ул. Мира</strong> "Холодильник LG шумел и не холодил. Мастер объяснил, что проблема в термостате, заменил быстро. Ещё дал советы по уходу. Вежливый и профессионал!"</div>
+                <div class="slide"><strong>Ольга, Сургут, район Северный</strong> "Вызвала в выходной — приехал через 40 мин. Устранил утечку, всё чисто и без пыли. Гарантия 1 год — сплю спокойно."</div>
+            </div>
+            <div class="slider-controls" id="slider-controls"></div>
+        </div>
+    </section>
+    
+    <section id="faq" class="wrap">
+        <h2>Часто задаваемые вопросы</h2>
+        <details class="faq">
+            <summary>Нужно ли отключать холодильник перед приездом?</summary>
+            <p>Не обязательно — я проверю в рабочем состоянии. Но если утечка, отключите за 2 часа.</p>
+        </details>
+        <details class="faq">
+            <summary>Ремонтируете ли старые модели?</summary>
+            <p>Да, включая советские и импортные 10+ лет. Запчасти всегда подберу.</p>
+        </details>
+        <details class="faq">
+            <summary>Что если ремонт не поможет?</summary>
+            <p>Гарантия 1 год — приеду и исправлю бесплатно.</p>
+        </details>
+        <details class="faq">
+            <summary>Сколько стоит выезд за город?</summary>
+            <p>По Сургуту бесплатно, за пределы — от 500 руб., в зависимости от расстояния.</p>
+        </details>
+        <p class="muted">Ещё вопросы? Звоните — проконсультирую!</p>
+    </section>
+    
+    <section id="contact" class="wrap">
+        <h2>Свяжитесь со мной</h2>
+        <div class="contacts">
+            <a href="tel:+73462123456" class="contact-btn phone"><i class="fa fa-phone"></i> Позвонить: +7 (3462) 12-34-56</a>
+            <a href="https://wa.me/73462123456" class="contact-btn wa"><i class="fa fa-whatsapp"></i> Написать в WhatsApp</a>
+            <a href="https://t.me/+73462123456" class="contact-btn tg"><i class="fa fa-telegram"></i> Написать в Telegram</a>
+        </div>
+        <p class="muted">Адрес: Сургут, ул. Ленина, 10 | Email: master@remholod-surgut.ru</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Ремонт холодильников Сургут. Все права защищены.</p>
+    </footer>
+    
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        
+        // Testimonials slider
+        const slides = document.getElementById('slides');
+        const children = slides.children;
+        let idx = 0;
+        const perView = () => (window.innerWidth < 768 ? 1 : (window.innerWidth < 1024 ? 2 : 3));
+        function update() {
+            const w = children[0].offsetWidth + 20; // width + gap
+            slides.style.transform = `translateX(${- (w * idx)}px)`;
+        }
+        function next() {
+            idx = (idx < children.length - perView()) ? idx + 1 : 0;
+            update();
+        }
+        setInterval(next, 8000); // Auto-cycle every 8 seconds
+        window.addEventListener('resize', () => { idx = 0; update(); });
+        update();
+        
+        // Slider controls
+        const ctr = document.getElementById('slider-controls');
+        const btnPrev = document.createElement('button'); btnPrev.textContent = '◀'; btnPrev.onclick = () => { idx = (idx > 0) ? idx - 1 : children.length - perView(); update(); };
+        const btnNext = document.createElement('button'); btnNext.textContent = '▶'; btnNext.onclick = next;
+        ctr.appendChild(btnPrev); ctr.appendChild(btnNext);
+        
+        // Fade-in animation for sections
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
