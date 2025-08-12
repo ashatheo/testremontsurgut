@@ -32,14 +32,13 @@
     <style>
         body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f0f8ff; color: #333; line-height: 1.6; }
         .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { position: sticky; top: 0; z-index: 10; background: linear-gradient(to right, #007bff, #00bfff); color: white; padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
-        .brand { display: flex; align-items: center; gap: 10px; }
-        .logo { width: 48px; height: 48px; background: linear-gradient(135deg, #007bff, #00bfff); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; }
-        .site-title { margin: 0; font-size: 1em; }
+        header { position: sticky; top: 0; z-index: 10; background: linear-gradient(to right, #007bff, #00bfff); color: white; padding: 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: nowrap; }
+        .brand { display: flex; align-items: center; }
+        .site-title { margin: 0; font-size: 1em; white-space: nowrap; }
         nav { display: none; }
-        .hdr-contacts { display: flex; gap: 8px; }
-        .btn-phone { color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; display: flex; align-items: center; gap: 8px; background: #28a745; }
+        .hdr-contacts { display: flex; flex-shrink: 0; }
+        .btn-phone { color: white; padding: 6px 12px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; background: #28a745; }
         .btn-phone:hover { background: #218838; }
         .hero { padding: 60px 20px; text-align: center; background: #f0f8ff; }
         .hero-content { position: relative; z-index: 1; }
@@ -90,8 +89,8 @@
         .scheme li::before { content: counter(scheme-counter); position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background: #007bff; color: white; width: 25px; height: 25px; border-radius: 50%; text-align: center; line-height: 25px; font-weight: bold; }
         .scheme li:hover { transform: translateX(5px); }
         @media (max-width: 768px) {
-            .header-inner { flex-direction: column; gap: 8px; }
-            .site-title { font-size: 1em; }
+            .header-inner { flex-direction: row; justify-content: space-between; gap: 8px; }
+            .site-title { font-size: 0.85em; line-height: 1.2; }
             .hero { padding: 15px; }
             .cta, .cta-secondary { padding: 8px 16px; font-size: 0.85em; }
             .contacts { flex-direction: column; }
@@ -100,9 +99,8 @@
             .prices-flex { flex-direction: column; }
             .slides { gap: 10px; }
             .slide { min-width: 100%; }
-            .hdr-contacts { flex-direction: column; }
-            .hdr-contacts a { width: 100%; font-size: 0.9em; }
-            .hdr-contacts i { font-size: 0.9em; }
+            .hdr-contacts { flex-direction: row; }
+            .btn-phone { font-size: 0.8em; padding: 6px 12px; width: auto; }
         }
     </style>
 </head>
@@ -110,13 +108,10 @@
     <header>
         <div class="wrap header-inner">
             <div class="brand">
-                <div class="logo">RH</div>
-                <div>
-                    <h1 class="site-title">Ремонт холодильников в Сургуте</h1>
-                </div>
+                <h1 class="site-title">Ремонт холодильников в Сургуте</h1>
             </div>
             <div class="hdr-contacts">
-                <a href="tel:+73462123456" class="btn-phone"><i class="fa fa-phone"></i> Позвонить: +7 (3462) 12-34-56</a>
+                <a href="tel:+73462123456" class="btn-phone">Позвонить: +7 (3462) 12-34-56</a>
             </div>
         </div>
     </header>
@@ -328,4 +323,4 @@
         sections.forEach(section => observer.observe(section));
     </script>
 </body>
-</html> 
+</html>
